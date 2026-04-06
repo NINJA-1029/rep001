@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    // alias(libs.plugins.google.services)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -60,9 +60,9 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.coroutines.android)
     implementation(libs.lifecycle.viewmodel.ktx)
-    // implementation(platform(libs.firebase.bom))
-    // implementation(libs.firebase.auth)
-    // implementation(libs.firebase.messaging)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.messaging)
     implementation(libs.androidx.security.crypto)
 
     testImplementation(libs.junit)

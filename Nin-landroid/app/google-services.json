@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208355550448",
+    "project_id": "nin-landroid",
+    "storage_bucket": "nin-landroid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208355550448:android:458dee7ff3c25b0c1d8e35",
+        "android_client_info": {
+          "package_name": "in.ac.agri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA63tRPlVOjDF77Gv3ld60NExeRcBKuJwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

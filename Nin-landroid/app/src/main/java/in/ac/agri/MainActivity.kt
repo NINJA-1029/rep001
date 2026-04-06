@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.ui.Modifier
 import androidx.compose.runtime.*
-// import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth
 import in.ac.agri.network.ApiClient
 import in.ac.agri.repository.ParcelRepository
 import in.ac.agri.ui.auth.AuthScreen
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             AgriTheme {
                 var isAuthenticated by remember { 
-                    mutableStateOf(false) // Bypassed: FirebaseAuth.getInstance().currentUser != null
+                    mutableStateOf(FirebaseAuth.getInstance().currentUser != null) 
                 }
 
                 if (!isAuthenticated) {

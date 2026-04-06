@@ -6,7 +6,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-// import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth
 
 @Composable
 fun AuthScreen(onAuthSuccess: () -> Unit) {
@@ -14,7 +14,7 @@ fun AuthScreen(onAuthSuccess: () -> Unit) {
     var otp by remember { mutableStateOf("") }
     var verificationId by remember { mutableStateOf<String?>(null) }
     
-    // val auth = FirebaseAuth.getInstance()
+    val auth = FirebaseAuth.getInstance()
 
     Column(
         modifier = Modifier
