@@ -12,7 +12,16 @@
           "package_name": "in.ac.agri"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "208355550448-c1pm2qnhcha9ji1v0fiboag2mia0a2sg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.ac.agri",
+            "certificate_hash": "42cbad9dc565631fcf489a7eedc055100d1a90e5"
+          }
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA63tRPlVOjDF77Gv3ld60NExeRcBKuJwE"
