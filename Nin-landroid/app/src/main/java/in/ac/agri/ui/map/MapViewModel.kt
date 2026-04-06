@@ -1,11 +1,11 @@
-package in.ac.agri.ui.map
+package `in`.ac.agri.ui.map
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import in.ac.agri.network.Parcel
-import in.ac.agri.network.ParcelDetails
-import in.ac.agri.repository.MockData
-import in.ac.agri.repository.ParcelRepository
+import `in`.ac.agri.network.Parcel
+import `in`.ac.agri.network.ParcelDetails
+import `in`.ac.agri.repository.MockData
+import `in`.ac.agri.repository.ParcelRepository
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

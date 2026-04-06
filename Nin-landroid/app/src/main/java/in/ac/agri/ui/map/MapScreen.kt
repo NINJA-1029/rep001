@@ -1,4 +1,4 @@
-package in.ac.agri.ui.map
+package `in`.ac.agri.ui.map
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -12,15 +12,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import in.ac.agri.network.ParcelDetails
-import org.maplibre.gl.maps.MapView
-import org.maplibre.gl.maps.Style
-import org.maplibre.gl.style.layers.FillLayer
-import org.maplibre.gl.style.layers.PropertyFactory
-import org.maplibre.gl.style.layers.RasterLayer
-import org.maplibre.gl.style.sources.GeoJsonSource
-import org.maplibre.gl.style.sources.RasterSource
-import org.maplibre.gl.style.sources.TileSet
+import `in`.ac.agri.network.ParcelDetails
+import org.maplibre.android.maps.MapView
+import org.maplibre.android.maps.Style
+import org.maplibre.android.style.layers.FillLayer
+import org.maplibre.android.style.layers.PropertyFactory
+import org.maplibre.android.style.layers.RasterLayer
+import org.maplibre.android.style.sources.GeoJsonSource
+import org.maplibre.android.style.sources.RasterSource
+import org.maplibre.android.style.sources.TileSet
 
 @Composable
 fun MapScreen(viewModel: MapViewModel) {
@@ -42,7 +42,7 @@ fun MapScreen(viewModel: MapViewModel) {
                 factory = { ctx ->
                     MapView(ctx).apply {
                         getMapAsync { map ->
-                            map.setStyle(Style.SATELLITE)
+                            map.setStyle("https://demotiles.maplibre.org/style.json")
                         }
                     }
                 },
